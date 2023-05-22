@@ -31,10 +31,8 @@ func InitDB() *gorm.DB {
 		charset,
 	)
 
-	db, err := gorm.Open(mysql.Open(dsn), &gorm.Config{})
-	if err != nil {
-		panic(err)
-	}
+	db, _ := gorm.Open(mysql.Open(dsn), &gorm.Config{})
+
 	db.AutoMigrate(&model.User{})
 	return db
 }
