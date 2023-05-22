@@ -1,0 +1,20 @@
+echo "# gin_vue" >> README.md
+git init
+git add .                 //
+git commit -m "第一版"    //
+git branch -M main
+git remote add origin https://github.com/sunwu57/gin_vue.git
+git push -u origin main   //
+git status
+
+git remote add origin https://github.com/sunwu57/vue-gin.git
+git branch -M main
+git push -u origin main
+
+git push origin main
+
+
+执行git rm --cached
+执行git add .
+执行git commit -m "commit messge"
+执行git push origin [branch_name]
